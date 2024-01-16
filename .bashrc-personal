@@ -1,10 +1,12 @@
 #Put this below .bashrc
 #[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
+eval "$(starship init bash)"
+#starship preset gruvbox-rainbow -o ~/.config/starship.toml
+
 figlet "MadDroid" | lolcat
 pfetch | lolcat
 
-#starship init fish | source
 
 #alias
 alias ls="lsd --color always --group-directories-first"
