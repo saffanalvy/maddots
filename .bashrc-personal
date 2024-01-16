@@ -1,0 +1,22 @@
+#Put this below .bashrc
+#[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
+
+figlet "MadDroid" | lolcat
+pfetch | lolcat
+
+#starship init fish | source
+
+#alias
+alias ls="lsd --color always --group-directories-first"
+alias la="lsd -a --color always --group-directories-first"
+alias ll="lsd -alFh --color always --group-directories-first"
+alias clear='clear && figlet "MadDroid" | lolcat && pfetch | lolcat'
+alias cat="/usr/bin/bat"
+alias getmp3="yt-dlp -x --audio-format=mp3"
+alias maddots="/usr/bin/git --git-dir=$HOME/maddots --work-tree=$HOME"
+#maddots config --local status.showUntrackedFiles no
+#maddots push --set-upstream git@github.com:saffanalvy/maddots.git main
+
+
+#paths
+export PATH="$PATH:/home/maddroid/Packages/flutter/bin"
