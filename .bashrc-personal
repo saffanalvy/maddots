@@ -16,9 +16,13 @@ alias clear='clear && figlet "MadDroid" | lolcat && pfetch | lolcat'
 alias cat="/usr/bin/bat"
 alias getmp3="yt-dlp -x --audio-format=mp3"
 alias maddots="/usr/bin/git --git-dir=$HOME/maddots --work-tree=$HOME"
+
+#Setup MadDots
 #maddots config --local status.showUntrackedFiles no
 #maddots push --set-upstream git@github.com:saffanalvy/maddots.git main
 
+#Restore MadDots
+#git clone --bare https://github.com/saffanalvy/maddots.git
 
 #paths
 export PATH="$PATH:/home/maddroid/Packages/flutter/bin"
